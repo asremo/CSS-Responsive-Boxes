@@ -1,3 +1,77 @@
 body {
   background: peachpuff;
 }
+
+/* Mobile Design */ 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
+
+}
+
+.container>* {
+  flex: 1 1 50px;
+}
+
+.container .a {
+  background-color: aqua;
+  min-width: 100%;
+  min-height: 8vh;
+  margin: 1em;
+}
+
+.container .b {
+  background-color: red;
+  min-width: 25%;
+  min-height: 10vh;
+  margin-right: 1em;
+}
+
+.container .c {
+  background-color: blueviolet;
+  min-width: 25%;
+  min-height: 10vh;
+  margin-right: 1em;
+}
+
+.container .d {
+  background-color: brown;
+  min-width: 25%;
+  min-height: 10vh;
+}
+
+.container .e {
+  background-color: olivedrab;
+  min-width: 25%;
+  min-height: 10vh;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+
+}
+
+.container .f {
+  background-color: gray;
+  min-width: 25%;
+  min-height: 10vh;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container .g {
+  background-color: orange;
+  min-width: 25%;
+  min-height: 10vh;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.container .h {
+  background-color: hotpink;
+  min-width: 100%;
+  min-height: 30vh;
+  margin-bottom: 1em;
+}

@@ -1,3 +1,92 @@
 body {
   background: papayawhip;
 }
+
+/* Mobile Design */ 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 100vh;
+
+}
+
+.container>* {
+  flex: 1 1 50px;
+}
+
+.container .a {
+  background-color: aqua;
+  min-width: 100%;
+  min-height: 20vh;
+  margin-top: 1em;
+}
+
+.container .b {
+  background-color: red;
+  min-width: 100%;
+  min-height: 40vh;
+  margin: 1em;
+}
+
+.container .c {
+  background-color: blueviolet;
+  min-width: 30%;
+  min-height: 20vh;
+  margin-right: 1em;
+}
+
+.container .d {
+  background-color: brown;
+  min-width: 30%;
+  min-height: 20vh;
+  margin-right: 1em;
+}
+
+.container .e {
+  background-color: olivedrab;
+  min-width: 30%;
+  min-height: 20vh;
+
+}
+
+.container .f {
+  background-color: gray;
+  min-width: 100%;
+  min-height: 20vh;
+  margin: 1em;
+}
+
+
+/* Desktop Design */ 
+@media (min-width: 600px) and (min-height: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container .a {
+    width: 100%;
+    min-height: 200px;
+  }
+  .container .b {
+    width: 450px;
+    min-height: 200px;
+  }
+  .container .c {
+    width: 25%;
+    min-height: 200px;
+  }
+  .container .d {
+    width: 25%;
+    min-height: 200px;
+  }
+  .container .e {
+    width: 25%;
+    min-height: 200px;
+  }
+  .container .f {
+    width: 25%;
+    height: 400px;
+  }
+}
+

@@ -1,3 +1,47 @@
 body {
   background: blanchedalmond;
 }
+
+/* Mobile Design */ 
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .a {
+  background-color: aqua;
+  flex-grow: 2;
+  margin: 1em;
+}
+
+.container .b {
+  background-color: red;
+  min-height: 60vh;
+  flex-grow: 5;
+  margin: 1em;
+}
+
+.container .c {
+  background-color: blueviolet;
+  flex-grow: 2;
+  margin: 1em;
+}
+/* Desktop Design */ 
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container .a {
+    width: 100%;
+  }
+  .container .b {
+    max-width: 55%;
+  }
+  .container .c {
+    max-width: 35%
+  }
+}
+
